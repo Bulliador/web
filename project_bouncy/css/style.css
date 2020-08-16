@@ -26,8 +26,8 @@ body {
 }
 
 .header__body {
-  max-width: 1190px;
-  padding: 50px 10px 0px 10px;
+  max-width: 1210px;
+  padding: 50px 20px 0px 20px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -42,6 +42,8 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
+
+
 /* ------------ Desktop navigation ----------- */
 .nav__list {
   display: flex;
@@ -85,7 +87,6 @@ body {
 ----------BURGER ICON----------
 */
 .burger-icon {
-  margin-right: 20px;
   z-index: 19;
   position: relative;
   display: none;
@@ -235,7 +236,7 @@ body {
 }
 .header__arrow {
   align-self: center;
-  margin-bottom: 75px;
+  padding: 50px 0px;
 }
 
 .scroll-btn {

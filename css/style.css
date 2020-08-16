@@ -28,14 +28,27 @@ body {
     margin-bottom: 100px;
 }
 .header__text {
+    text-align: center;
     font-size: 50px;
     color: rgb(255, 0, 0);
+    margin-bottom: 30px;
 }
 .header__logo {
 
 }
 .header__nav {
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px 50px;
+}
+.nav__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
 }
 .header__list {
 }
@@ -44,7 +57,7 @@ body {
 .list__link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     transition-duration: 0.5s;
     transition-property: background-color, color;
@@ -53,6 +66,16 @@ body {
 }
 
 .list__link:hover {
-    background-color:rgba(0, 0, 0, 0.8);
-    color: rgb(0, 162, 255);
+    background-color:rgba(0, 0, 0, 1);
+    color: rgb(255, 255, 255);
+}
 
+@media (max-width: 460px) {
+    .header__text {
+        font-size: 40px; 
+    }
+    .header__logo img {
+        max-width: 300px;
+    }
+    
+  }
