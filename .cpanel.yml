@@ -1,0 +1,5 @@
+---
+    deployment:
+    tasks:
+    - export DEPLOYPATH=/home/u1125519/public_html/bulliador.site
+    - /bin/cp -R main_page $DEPLOYPATH
