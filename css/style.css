@@ -1,20 +1,48 @@
 @import url('normalize.css');
 
+body {
+    height: 100%;
+ }
+ .wrapper {
+     min-height: 100vh;
+ }
 .header {
-  
+    min-height: 100vh;
+    background: url(../img/fon.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.header__body {
+    max-width: 1190px;
+    padding: 50px 10px 50px 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
 }
 .header__text {
+    font-size: 50px;
+    color: red;
 }
 .header__logo {
+
 }
 .header__nav {
+    text-align: center;
 }
 .header__list {
 }
 .list__item {
 }
 .list__link {
+    font-size: 50px;
+    color: white;
 }
 
