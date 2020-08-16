@@ -1,6 +1,8 @@
 ---
-    deployment:
-      tasks:
-        - export REPOPATH=/var/www/u1125519/repo/*
-        - export SITEPATH=/var/www/u1125519/public_html/bulliador.site
-        - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
+deployment:
+tasks:
+- export DEPLOYPATH=/var/www/u1125519/public_html/bulliador.site
+- /bin/cp -R css $DEPLOYPATH
+- /bin/cp -R img $DEPLOYPATH
+- /bin/cp -R project_bouncy $DEPLOYPATH
+- /bin/cp index.html $DEPLOYPATH
