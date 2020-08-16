@@ -162,24 +162,23 @@ body {
 */
 
 .mobile-nav {
+  display: none;
   z-index: 9;
-  display: block;
+  /*display: block;*/
   position: absolute;
-  right: -420px;
+  right: -320px;
   top: 0;
   height: 100%;
-  width: 420px;
+  width: 320px;
   padding: 50px;
-  /*background-color: rgba(0, 0, 0, 0.7);*/
-  background: url(../img/big-black-cock-52303304.png) 50% 50% no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.75);
   transition: transform 0.4s ease-in;
+  text-align: center;
 }
 
 @media (max-width: 770px) {
   .mobile-nav {
-      width: 320px;
-      right: -320px;
+    display: block;
   }
 }
 
