@@ -11,10 +11,11 @@
   <body>
     <div class="wrapper">
 
+
       <header class="header">
         <div class="header__body">
           <div class="header__top">
-            <div class="header_logo"><img src="img/header/logo.png" alt=""></div>
+            <div class="header_logo"><img src="img/header/logo.png" alt="" /></div>
 
             <!--NAVIGATION-->
             <div class="header__nav">
@@ -47,7 +48,14 @@
                   <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Contact</a></li>
                 </ul>
               </div>
-              <!-- /////Навигация для телефона///// -->     
+              <!-- /////Навигация для телефона///// -->
+              <script>const menuToggle = document.querySelector('#menu-togle');
+                const mobileNavContainer = document.querySelector('#mobile-nav');
+                
+                menuToggle.onclick = function(){
+                    menuToggle.classList.toggle('burger-icon-active');
+                    mobileNavContainer.classList.toggle('mobile-nav--active');
+                }</script>
             </div>
             <!-- //////////NAVIGATION////////// -->
           </div>
@@ -55,52 +63,94 @@
             <div class="header__title">We Are Code Cafe</div>
             <div class="header__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
           </div>
-          <div class="header__arrow" >
+          <div class="header__arrow">
             <div class="arrow" id="scroll_down">
-              <img class="scroll-btn" src="img/header/arrow.png" alt="arrow">
+              <img class="scroll-btn" src="img/header/arrow.png" alt="arrow" />
             </div>
           </div>
           <script>
-          (function() {
-            'use strict';
-        
-            let btnScrollDown = document.querySelector('#scroll_down');
-          
-            function scrollDown() {
-              let windowCoords = document.documentElement.clientHeight;
-              (function scroll() {
-                if (window.pageYOffset < windowCoords) {
-                  window.scrollBy(0, 10);
-                  setTimeout(scroll, 0);
-                }
-                if (window.pageYOffset > windowCoords) {
-                  window.scrollTo(0, windowCoords);
-                }
-              })();
-            }
-          
-            btnScrollDown.addEventListener('click', scrollDown);
-          })();
+            (function () {
+              "use strict";
+
+              let btnScrollDown = document.querySelector("#scroll_down");
+
+              function scrollDown() {
+                let windowCoords = document.documentElement.clientHeight;
+                (function scroll() {
+                  if (window.pageYOffset < windowCoords) {
+                    window.scrollBy(0, 10);
+                    setTimeout(scroll, 0);
+                  }
+                  if (window.pageYOffset > windowCoords) {
+                    window.scrollTo(0, windowCoords);
+                  }
+                })();
+              }
+
+              btnScrollDown.addEventListener("click", scrollDown);
+            })();
           </script>
         </div>
       </header>
-
+        <!-- /////ABOUT BLOCK///// -->
       <div class="about">
         <div class="about__container">
           <div class="about__body">
             <div class="about__text">
               <div class="about__title title">This is Bouncy</div>
-              <div class="about__paragraph text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </div>
-              <div class="about__button"><a class="about__button__link" href="#">Read More</a></div>
+              <div class="about__paragraph text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              </div>
+              <div class="about__button"><a class="about__button__link" href="">Read More</a></div>
             </div>
             <div class="about__image">
-              <img src="img/about/IPAD.png" alt="ipad" class="about__image__ipad">
+              <img src="img/about/IPAD.png" alt="ipad" class="about__image__ipad" />
             </div>
           </div>
         </div>
       </div>
+      <!-- //////////ABOUT BLOCK////////// -->
+      <div class="details">
+        <div class="details__container">
+          <div class="details__body">
+            <div class="details__heading">
+              <div class="details__title title">DetailS ABOUT BOUNCY</div>
+              <div class="details__subtitle text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+            </div>
+            <div class="details__icon">
+              <div class="details__icon-bg details__icon-bg-heart details__icon-bg-active"><img class="icon__heart" src="img/details/heart.png" alt="heart" ></div>
+              <div class="details__icon-bg details__icon-bg-mouse"><img class="icon__mouse" src="img/details/mouse.png" alt="mouse" ></div>
+              <div class="details__icon-bg details__icon-bg-lamp"><img class="icon__lamp" src="img/details/lamp.png" alt="lamp" ></div>
+            </div>
+            <div class="details__description description__heart details__description-active">
+              <div class="description__title">With Love</div>
+              <div class="description__row">
+                <div class="description__text description__text-left">Next his only boy meet the fat <span>rose when</span>. Do repair at we misery wanted remove remain income. Occasional <b>cultivated reasonable</b> unpleasing an attachment my considered. Having ask and coming object seemed put did admire figure.</div>
+                <div class="description__text description__text-right">Resources exquisite set arranging <b>moonlight sex</b> him household had. Months had too ham cousin remove far spirit. She <span>procuring</span> the why performed continual improving. Civil songs so large shade in cause. Lady an mr here must neat sold. Children greatest ye <b>extended delicate of</b>. No elderly passage earnest as in removed winding or.</div>
+              </div>
+            </div>
+            <div class="details__description description__mouse">
+              <div class="description__title">Fast Coding</div>
+              <div class="description__row">
+                <div class="description__text description__text-left">Talking <span>chamber</span> as shewing an it minutes. Trees <b>fully of blind</b> do. Exquisite favourite at do extensive listening. Improve up musical welcome he.</div>
+                <div class="description__text description__text-right">Certainty determine at of arranging <b>perceived situation</b> or. Or wholly pretty county in oppose. Favour met itself <span>wanted</span> settle put garret twenty. In astonished apartments resolution so an it. Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion furniture it.</div>
+              </div>
+            </div>
+            <div class="details__description description__lamp">
+              <div class="description__title">Creative Ideas</div>
+              <div class="description__row">
+                <div class="description__text description__text-left">At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </div>
+                <div class="description__text description__text-right">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/details-icon.js"></script>
+      </div>
+      </div>
     </div>
-    
-    <script src="js/main.js"></script>
   </body>
 </html>

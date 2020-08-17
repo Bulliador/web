@@ -247,7 +247,7 @@ body {
 }
 .header__arrow {
   align-self: center;
-  padding: 50px 0px;
+  margin: 50px 0px;
 }
 
 .scroll-btn {
@@ -368,4 +368,144 @@ body {
 }
 /*
 ///////////////////////ABOUT///////////////////////
+*/
+
+
+/*
+-------------------------DETAILS-------------------------
+*/
+.details {
+  background-color: #f3f3f3;
+}
+.details__container {
+  max-width: 1005px;
+  margin: 0 auto;
+}
+.details__body {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+}
+.details__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 460px;
+  text-align: center;
+}
+.details__title {
+  margin-bottom: 40px;
+}
+.details__subtitle {
+}
+.details__icon {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+}
+.details__icon-bg {
+  margin-right: 30px;
+  cursor: pointer;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #81868e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details__icon-bg:last-child {
+  margin-right: 0px;
+}
+
+.details__icon-bg-active {
+  transition-duration: 0.5s;
+	transition-property: background-color;
+	background-color: #19bd9a;
+}
+.icon__heart {
+}
+.icon__mouse {
+}
+.icon__lamp {
+}
+.details__description {
+  display: none;
+  flex-direction: column;
+
+}
+.details__description-active {
+  display: flex;
+}
+
+.description__title {
+color: #464646;
+font-family: "Open Sans";
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0.8px;
+margin-bottom: 40px;
+}
+.description__row {
+  display: flex;
+  justify-content: space-between;
+}
+.description__text {
+color: #81868e;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+.description__text span {
+color: #19bd9a;
+font-weight: 700;
+letter-spacing: 0.8px;
+}
+.description__text b {
+color: #636971;
+font-weight: 700;
+letter-spacing: 0.8px;
+}
+.description__text-left {
+  max-width: 325px;
+}
+.description__text-right {
+  max-width: 520px;
+  margin-left: 30px;
+}
+.description__mouse {
+}
+.description__lamp {
+}
+.description__heart {
+}
+
+@media (max-width: 768px) {
+  .details__body {
+    padding: 40px 20px;
+  }
+  .details__title {
+    margin-bottom: 20px;
+  }
+  .details__icon {
+    margin: 30px 0px;
+  }
+  .description__title {
+    text-align: center;
+  }
+  .description__row {
+    flex-wrap: wrap;
+  }
+  .description__text-left {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .description__text-right {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+/*
+///////////////////////DETAILS///////////////////////
 */
